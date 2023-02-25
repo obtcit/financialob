@@ -471,7 +471,7 @@
   <string name="expired">(протерміновано)</string>
   <string name="pending">(очікування)</string>
   <string name="system_attribute_delete_after_expired">Видалити після закінчення терміну дії</string>
-  <string name="no_transaction_found">Немає транзакції, необхідно перезавантажити Financisto...</string>
+  <string name="no_transaction_found">Немає транзакції, необхідно перезавантажити App....</string>
   <string name="include_credit">Включити прибуток</string>
   <string name="include_credit_summary">Включати доходи (надходження або прибутки) в увесь бюджет</string>
   <string name="enable_widget">Увімкнути віджет</string>
@@ -620,9 +620,9 @@
   <string name="quick_menu_transaction_enabled_summary">Увімкнути швидке меню у журналі</string>
   <string name="dropbox">Dropbox</string>
   <string name="dropbox_authorize">Авторизація</string>
-  <string name="dropbox_authorize_summary">Дозволити Financisto вивантажувати файли на ваш Dropbox</string>
+  <string name="dropbox_authorize_summary">Дозволити App. вивантажувати файли на ваш Dropbox</string>
   <string name="dropbox_unlink">Відв\'язати</string>
-  <string name="dropbox_unlink_summary">Заборонити Financisto вивантажувати файли на ваш Dropbox </string>
+  <string name="dropbox_unlink_summary">Заборонити App. вивантажувати файли на ваш Dropbox </string>
   <string name="dropbox_upload_backup">Вивантажувати резервні</string>
   <string name="dropbox_upload_backup_summary">Вивантажувати резервні копії на Dropbox</string>
   <string name="dropbox_upload_autobackup">Вивантажувати автоматичні копії</string>
@@ -785,8 +785,8 @@
   <string name="dropbox_auth_error">Немає дозволу для завантаження на Dropbox. Будь ласка перевірте ваші налаштування.</string>
   <string name="google_drive_permission_requested">Запит дозволу</string>
   <string name="google_drive_permission_requested_for_account">для аккаунту %s</string>
-  <string name="google_drive_permission_required">Будь ласка дозвольте Financisto доступ до вашого Google Диску та спробуйте ще раз...</string>
-  <string name="installed_on_sd_card_warning">Заплановані транзакції можуть працювати не так як очікується якщо Financisto встановлений на карту пам\'яті. Будь ласка перенесіть додаток до внутрішньої пам\'яті телефону.</string>
+  <string name="google_drive_permission_required">Будь ласка дозвольте App. доступ до вашого Google Диску та спробуйте ще раз...</string>
+  <string name="installed_on_sd_card_warning">Заплановані транзакції можуть працювати не так як очікується якщо App. встановлений на карту пам\'яті. Будь ласка перенесіть додаток до внутрішньої пам\'яті телефону.</string>
   <string name="openexchangerates_app_id_summary">Будь ласка зареєструйте безкоштовний аккаунт в сервісі OpenExchangeRates та введіть ваш App ID</string>
     <string name="electronic_type_yandex_money">Яндекс.Деньги</string>
   <string name="note_text_containing">Коментар містить текст</string>

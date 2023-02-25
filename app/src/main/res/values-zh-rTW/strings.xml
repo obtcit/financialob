@@ -62,6 +62,8 @@
   <string name="select_account">請選擇帳戶…</string>
   <string name="select_currency">請選擇貨幣…</string>
   <string name="select_category">請選擇分類…</string>
+  <string name="select_payee">請選擇受款人…</string>
+  <string name="autocomplete_filter_hint">開始輸入…</string>
   <string name="select_project">請選擇專案…</string>
   <string name="warning">警告</string>
   <string name="no_accounts">您必須從建立新帳戶開始，請點擊下面綠色的 \'+\' 按鈕…</string>
@@ -243,6 +245,7 @@
   <string name="select_to_account">請選擇目標帳戶…</string>
   <string name="update_balance">調整餘額</string>
   <string name="close_account">關閉帳戶</string>
+  <string name="close_account_confirm">確定要關閉帳戶?</string>
   <string name="reopen_account">重開帳戶</string>
   <string name="difference">差異值</string>
   <string name="new_balance">最新餘額</string>
@@ -469,7 +472,7 @@
   <string name="expired">(過期)</string>
   <string name="pending">(擱置)</string>
   <string name="system_attribute_delete_after_expired">過期後自動刪除</string>
-  <string name="no_transaction_found">查無交易，請重新啟動 Financisto</string>
+  <string name="no_transaction_found">查無交易，請重新啟動App</string>
   <string name="include_credit">包含增額</string>
   <string name="include_credit_summary">將增額(收入或退款)加入預算總額</string>
   <string name="enable_widget">啟用小工具</string>
@@ -510,7 +513,7 @@
   <string name="header_credits">各信用額</string>
   <string name="header_expenses">支出</string>
   <string name="ui_language">Locales / 語言</string>
-  <string name="ui_language_summary">Set language of user interface (requires restart!) / 設定使用者介面的語言 (需要重新啟動!)</string>
+  <string name="ui_language_summary">設定使用者介面的語言 (需要重新啟動!)</string>
   <string name="enter_pin">輸入 PIN</string>
   <string name="mass_operations">大量編輯</string>
   <string name="card_issuer_unionpay">UnionPay</string>
@@ -579,6 +582,7 @@
   <string name="import_unknown_category">匯入檔案裡有未知分類</string>
   <string name="import_unknown_project">匯入檔案裡有未知專案</string>
   <string name="import_wrong_currency">匯入檔案裡有錯誤幣值</string>
+  <string name="import_wrong_currency_2">導入文件中的貨幣錯誤: \n請將不同帳戶分成不同的文件.</string>
   <string name="import_illegal_argument_exception">不合法引數例外</string>
   <string name="import_parse_error">匯入檔解析錯誤</string>
   <string name="csv_import_error">CSV 匯入錯誤</string>
@@ -618,9 +622,9 @@
   <string name="quick_menu_transaction_enabled_summary">在明細畫面啟用單按選單</string>
   <string name="dropbox">Dropbox</string>
   <string name="dropbox_authorize">授權</string>
-  <string name="dropbox_authorize_summary">允許 Financisto 上傳檔案到您的 Dropbox</string>
+  <string name="dropbox_authorize_summary">允許本程式上傳檔案到您的 Dropbox</string>
   <string name="dropbox_unlink">解除連結</string>
-  <string name="dropbox_unlink_summary">防止 Financisto 上傳檔案到您的 Dropbox</string>
+  <string name="dropbox_unlink_summary">防止本應用程式上傳檔案到您的 Dropbox</string>
   <string name="dropbox_upload_backup">上傳備份</string>
   <string name="dropbox_upload_backup_summary">將資料庫備份檔上傳到 Dropbox</string>
   <string name="dropbox_upload_autobackup">上傳自動備份</string>
@@ -715,6 +719,20 @@
     <item>以名稱</item>
     <item>以頻率</item>
   </string-array>
+  <string name="sort_templates">排序範本</string>
+  <string name="sort_templates_summary">定義模版順序</string>
+  <string-array name="sort_templates_entities">
+    <item>按建立時間</item>
+    <item>按名稱</item>
+    <item>按帳號</item>
+  </string-array>
+  <string name="sort_budgets">排序預算</string>
+  <string name="sort_budgets_summary">定義樣版順序</string>
+  <string-array name="sort_budgets_entities">
+    <item>按開始日期</item>
+    <item>按名稱</item>
+    <item>按帳號</item>
+  </string-array>
   <string-array name="sort_blotter_entries">
     <item>從新到舊</item>
     <item>從舊到新</item>
@@ -780,7 +798,7 @@
   <string name="google_drive_loading_files">正在從 Google Drive 載入檔案…</string>
   <string name="google_drive_permission_requested">要求權限：</string>
   <string name="google_drive_permission_requested_for_account">帳戶 %s</string>
-  <string name="google_drive_permission_required">請授權 Financisto 操作您的 Google Drive 然後再試一次…</string>
+  <string name="google_drive_permission_required">請授權本應用程式操作您的 Google Drive 然後再試一次…</string>
   <string name="google_drive_restore_in_progress">正在從 Google Drive 回復資料庫…</string>
   <string name="google_drive_upload_autobackup">上傳自動備份</string>
   <string name="google_drive_upload_autobackup_summary">把資料庫自動備份檔上傳到 Google Drive</string>
@@ -793,7 +811,7 @@
   <string name="googledrive_folder_summary">選擇在 Google Drive 儲存上傳照片的資料夾</string>
   <string name="googledrive_upload">上傳照片</string>
   <string name="googledrive_upload_summary">將附加照片上傳到 Google Drive</string>
-  <string name="installed_on_sd_card_warning">若把 Financisto 移到 SD 卡，定期交易有可能無法自動執行。請把它移回手機內部儲存空間。</string>
+  <string name="installed_on_sd_card_warning">若把APP移到 SD 卡，定期交易有可能無法自動執行。請把它移回手機內部儲存空間。</string>
   <string name="no_payees">無受款人</string>
   <string name="offline_rate">無網路連線，將採用最後一次下載的匯率…</string>
   <string name="open_calculator_for_template_transactions">打開計算機</string>
@@ -817,7 +835,7 @@
   <string name="request_permissions_not_granted">無權限</string>
   <string name="request_permissions_storage_description">需要此權限以讀寫記憶卡上的備份檔。</string>
   <string name="request_permissions_storage_title">寫入外部儲存裝置</string>
-  <string name="request_permissions_title">Financisto 需要您手動允許一些權限。</string>
+  <string name="request_permissions_title">本應用程式需要您手動允許一些權限。</string>
   <string name="restore_database_inprogress_dropbox">正在匯回資料庫…</string>
   <string name="restore_database_online_dropbox">Dropbox 復原</string>
   <string name="restore_database_online_google_drive">Google Drive 復原</string>
@@ -825,4 +843,91 @@
   <string name="show_is_ccard_payment_summary">顯示勾選框以設定信用卡付款</string>
   <string name="show_payee_in_transfer">移轉收款人</string>
   <string name="show_payee_in_transfer_summary">新增移轉時顯示收款人欄位</string>
+
+  <string name="show_menu_button_on_accounts_screen">顯示選單</string>
+  <string name="show_menu_button_on_accounts_screen_summary">在帳戶畫面上顯示選單按鈕</string>
+  <string name="go_to_menu_tab">移至選單</string>
+
+  <string name="planner">計畫者</string>
+  <string name="preferences_summary">變更程式設定</string>
+  <string name="entities_summary">修改類別，收款人，項目，位置等</string>
+  <string name="scheduled_transactions_summary">排程交易和轉移</string>
+  <string name="backup_database_summary">備份數據庫到本地存儲</string>
+  <string name="restore_database_summary">從本地存儲還原數據庫</string>
+  <string name="backup_database_online_google_drive_summary">備份數據庫到 Google Drive</string>
+  <string name="restore_database_online_google_drive_summary">從 Google Drive 回復資料</string>
+  <string name="backup_database_online_dropbox_summary">備份資料到 Dropbox</string>
+  <string name="restore_database_online_dropbox_summary">從 Dropbox 恢復資料</string>
+  <string name="backup_database_to_summary">傳送資料庫備份到電子郵件與其它</string>
+  <string name="import_export_summary">導出/導入資料為其它格式,如csv,在備份目錄中</string>
+  <string name="mass_operations_summary">將操作套用到多項交易</string>
+  <string name="planner_summary">查看每月計劃</string>
+  <string name="integrity_fix_summary">在需要時解決內部問題</string>
+  <string name="donate_summary">捐款以支持本項目最初開發者(目標可能不存在)</string>
+  <string name="about_summary">獲取有關該項目的更多信息</string>
+
+
+  <string name="pin_warning">請確保記住PIN。 如果您丟失或忘記PIN，則無法恢復您的數據或關閉保護.</string>
+
+  <string name="auto_backup_reminder_enabled">自動備份提醒</string>
+  <string name="auto_backup_reminder_enabled_summary">如果自動備份幾天沒有執行提醒我.</string>
+  <string name="auto_backup_warning_enabled">失敗時通知</string>
+  <string name="auto_backup_warning_summary">上次執行失敗時通知.</string>
+  <string name="auto_backup_is_not_enabled">您應該考慮啟用自動到 Google Drive 或 Dropbox，以確保您的數據安全。 點擊 選單 -> 選項 -> 備份.</string>
+  <string name="integrity_error_message">%s%n(點擊關閉訊息)</string>
+  <string name="autobackup_failed_message">自動備份失敗 %s 錯誤: [%s].</string>
+
+  <string name="request_permissions_storage_not_granted">未授權外部儲存權限</string>
+  <string name="permissions">權限</string>
+  <string name="permissions_summary">審查需要手動授予的權限</string>
+
+
+  <string name="pin_protection_use_fingerprint">指紋解鎖</string>
+  <string name="pin_protection_use_fingerprint_summary">使用指紋解鎖應用程序</string>
+  <string name="pin_protection_use_fingerprint_fallback_to_pin_summary">退回到 PIN</string>
+  <string name="pin_protection_use_fingerprint_fallback_to_pin">即使啟用了指紋，允許使用PIN來解鎖應用程序.</string>
+  <string name="fingerprint_description">確認指紋繼續</string>
+  <string name="fingerprint_hint">觸摸傳感器</string>
+  <string name="fingerprint_auth_success">指紋認可</string>
+  <string name="fingerprint_auth_failed">指紋未識別。 再試一次.</string>
+  <string name="fingerprint_error">錯誤!</string>
+  <string name="fingerprint_unavailable_hardware">未檢測到指紋傳感器</string>
+  <string name="fingerprint_unavailable_enrolled_fingerprints">至少需要註冊一個指紋</string>
+  <string name="fingerprint_unavailable_unknown">不支持此設備</string>
+  <string name="fingerprint_unavailable">無法使用: %s</string>
+
+  <string name="image_pick_camera">相機</string>
+  <string name="image_pick_images">圖片</string>
+  <string name="use_pin">使用 PIN</string>
+  <string name="set_focus_on_amount_field">聚焦在金額欄位</string>
+  <string name="set_focus_on_amount_field_summary">新交易自動聚焦在金額欄位</string>
+  <string name="inactive">不活動</string>
+
+  <string name="entity_selector">實體選擇器</string>
+  <string name="category_selector_title">類別選擇器</string>
+  <string name="payee_selector_title">收款人選擇器</string>
+  <string name="location_selector_title">位置選擇器</string>
+  <string name="project_selector_title">項目選擇器</string>
+  <string name="entity_selector_summary">點擊時顯示清單或篩選</string>
+
+  <string name="create_new_entity_with_title">無法找到 %s 在標題 \"%s\"? 如果它遺失了請建立一個新的.</string>
+  <string name="complete_category_selection">找不到已存在的分類： \"%s\"? 請在分類選擇器使用 + 按鈕建立一個新的 .</string>
+  <string name="list_all">顯示全部</string>
+
+  <string-array name="entity_selector_entities">
+    <item>顯示篩選</item>
+    <item>顯示清單</item>
+  </string-array>
+
+
+<!--  SMS 相關-->
+  <string name="request_permissions_receive_sms_title">SMS 簡訊</string>
+  <string name="request_permissions_receive_sms_description">透過SMS樣版自動添加新事務交易.</string>
+
+  <string name="pref_sms">SMS 簡訊</string>
+  <string name="pref_sms_transaction_status_title">交易狀態</string>
+  <string name="pref_sms_transaction_status">SMS 簡訊的交易狀態: %s</string>
+  <string name="pref_sms_adding_to_note_title">儲存簡訊文字</string>
+  <string name="pref_sms_adding_to_note">將簡訊內容添加到交易備註</string>
+
 </resources>

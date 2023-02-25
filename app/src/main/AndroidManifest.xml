@@ -10,7 +10,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ru.orangesoftware.financisto"
+    package="tw.com.obtc.financialob"
     android:installLocation="internalOnly">
 
     <supports-screens
@@ -57,7 +57,8 @@
 
         <receiver
             android:name=".activity.AccountWidget"
-            android:label="@string/widget_2x1">
+            android:label="@string/widget_2x1"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name=".UPDATE_WIDGET" />
@@ -69,7 +70,8 @@
 
         <receiver
             android:name=".activity.AccountWidget3x1"
-            android:label="@string/widget_3x1">
+            android:label="@string/widget_3x1"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name=".UPDATE_WIDGET" />
@@ -81,7 +83,8 @@
 
         <receiver
             android:name=".activity.AccountWidget4x1"
-            android:label="@string/widget_4x1">
+            android:label="@string/widget_4x1"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name=".UPDATE_WIDGET" />
@@ -91,7 +94,8 @@
                 android:resource="@xml/widget_4x1" />
         </receiver>
 
-        <receiver android:name=".activity.ScheduledAlarmReceiver">
+        <receiver android:name=".activity.ScheduledAlarmReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name=".SCHEDULED_ALARM" />
                 <action android:name=".SCHEDULED_BACKUP" />
@@ -99,11 +103,12 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".activity.PackageReplaceReceiver">
+        <receiver android:name=".activity.PackageReplaceReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REPLACED" />
                 <data
-                    android:path="ru.orangesoftware.financisto"
+                    android:path="tw.com.obtc.financialob"
                     android:scheme="package" />
             </intent-filter>
         </receiver>
@@ -146,7 +151,8 @@
             android:name=".activity.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name"
-            android:taskAffinity=".MainActivity">
+            android:taskAffinity=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -159,7 +165,8 @@
             android:icon="@drawable/icon_transaction"
             android:label="@string/transaction"
             android:taskAffinity=".TransactionActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name=".NEW_TRANSACTION" />
@@ -174,7 +181,8 @@
             android:icon="@drawable/icon_transfer"
             android:label="@string/transfer"
             android:taskAffinity=".TransferActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name=".NEW_TRANSFER" />
@@ -460,7 +468,8 @@
         <activity
             android:name="com.dropbox.core.android.AuthActivity"
             android:configChanges="orientation|keyboard"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="true">
             <intent-filter>
 
                 <!-- Change this to be db- followed by your app key -->

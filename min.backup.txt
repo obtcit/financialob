@@ -1,4 +1,4 @@
-PACKAGE:ru.orangesoftware.financisto
+PACKAGE:tw.com.obtc.financialob
 VERSION_CODE:100
 VERSION_NAME:1.7.4
 DATABASE_VERSION:211

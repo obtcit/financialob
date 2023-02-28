@@ -1,5 +1,4 @@
 package tw.com.obtc.financialob.app;
-//package ru.orangesoftware.financisto.app;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -9,9 +8,6 @@ import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EApplication;
 
-//import ru.orangesoftware.financisto.bus.GreenRobotBus;
-//import ru.orangesoftware.financisto.export.drive.GoogleDriveClient;
-//import ru.orangesoftware.financisto.utils.MyPreferences;
 import tw.com.obtc.financialob.bus.GreenRobotBus;
 import tw.com.obtc.financialob.export.drive.GoogleDriveClient;
 import tw.com.obtc.financialob.utils.MyPreferences;

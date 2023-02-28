@@ -505,7 +505,7 @@ public class MyPreferences {
             try {
                 return (Boolean) hasSystemFeatureMethod.invoke(pm, feature);
             } catch (Exception e) {
-                Log.w("Financisto", "Some problems executing PackageManager.hasSystemFeature(" + feature + ")", e);
+                Log.w("financialob", "Some problems executing PackageManager.hasSystemFeature(" + feature + ")", e);
                 return false;
             }
         }

@@ -106,7 +106,7 @@ class GoogleDriveClientV3(val context: Context) {
         val jsonFactory = JacksonFactory.getDefaultInstance()
         // https://developers.google.com/resources/api-libraries/documentation/drive/v3/java/latest/index.html?com/google/api/services/drive/Drive.html
         return Drive.Builder(transport, jsonFactory, credential)
-                .setApplicationName("Financisto")
+                .setApplicationName("financialob")
                 .build()
     }
 

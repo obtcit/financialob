@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?><!--
+  Copyright (c) 2010 Denis Solonenko.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Denis Solonenko - initial API and implementation
+-->
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/top_layout"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="?android:attr/listChoiceBackgroundIndicator"
+    a:clickable="true"
+    a:focusable="true"
+    a:gravity="center_vertical"
+    a:minHeight="@dimen/select_entry_height"
+    a:orientation="horizontal"
+    a:paddingStart="8dp"
+    a:paddingEnd="?android:attr/scrollbarSize">
+
+
+    <LinearLayout a:orientation="horizontal"
+                  a:layout_width="match_parent"
+                  a:layout_height="wrap_content"
+                  a:layout_margin="0dp"
+                  a:padding="0dp"
+                  a:id="@+id/list_node_row">
+    
+        <RelativeLayout
+            a:layout_width="0dp"
+            a:layout_height="wrap_content"
+            a:layout_marginBottom="3dip"
+            a:layout_marginTop="3dip"
+            a:layout_weight="1"
+            a:duplicateParentState="true">
+    
+            <TextView
+                a:id="@+id/label"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:duplicateParentState="true"
+                a:ellipsize="marquee"
+                a:fadingEdge="horizontal"
+                a:singleLine="true"
+                a:textAppearance="?android:attr/textAppearanceMedium" />
+    
+            <TextView
+                a:id="@+id/data"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignLeft="@+id/label"
+                a:layout_below="@+id/label"
+                a:duplicateParentState="true"
+                a:maxLines="2"
+                a:textAppearance="?android:attr/textAppearanceSmall" />
+    
+        </RelativeLayout>
+    
+        <ImageView
+            a:id="@+id/more"
+            style="@style/MoreButton"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_gravity="bottom"/>
+    
+        <ImageView
+            a:id="@+id/plus_minus"
+            style="@style/PlusButton"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_gravity="center_vertical"
+            a:clickable="true"
+            a:focusable="true" />
+        
+    </LinearLayout>
+
+</LinearLayout>

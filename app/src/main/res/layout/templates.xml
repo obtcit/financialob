@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Copyright (c) 2010 Denis Solonenko. All rights reserved. This program
+		and the accompanying materials are made available under the terms of
+		the GNU Public License v2.0 which accompanies this distribution, and
+		is available at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+		Contributors: Denis Solonenko - initial API and implementation
+	-->
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+	a:layout_height="fill_parent" a:layout_width="fill_parent"
+	a:orientation="vertical">
+	<EditText a:layout_width="match_parent" a:layout_height="wrap_content" a:id="@+id/searchFilter" a:hint="Type template..."/> <!-- todo.mb move to res -->
+	
+	<ListView a:id="@android:id/list" a:layout_width="fill_parent"
+		a:layout_weight="1" a:layout_height="wrap_content">
+	</ListView>
+	<TextView a:id="@id/android:empty" a:layout_width="fill_parent"
+		a:layout_weight="1" a:gravity="center" a:text="@string/no_transactions"
+		a:layout_height="?android:attr/listPreferredItemHeight" />
+
+	<LinearLayout a:layout_height="wrap_content"
+		a:layout_width="fill_parent" style="@style/ButtonBar">
+		<Button a:layout_height="wrap_content" a:id="@+id/bEditTemplates"
+			a:layout_width="wrap_content" a:layout_weight="1"
+			a:text="@string/edit"></Button>
+		<ImageButton a:layout_width="wrap_content"
+			a:layout_height="wrap_content" style="@style/MinusButton"
+			a:id="@+id/bMinus" a:layout_marginLeft="10dp" />
+		<TextView a:layout_width="wrap_content"
+			a:layout_height="wrap_content" a:id="@+id/multiplier"
+			a:text="x1" a:textStyle="bold" a:textColor="#ffffff"></TextView>
+		<ImageButton a:layout_width="wrap_content"
+			a:layout_height="wrap_content" style="@style/PlusButton"
+			a:id="@+id/bPlus" a:layout_marginRight="10dp" />
+		<Button a:layout_height="wrap_content" a:id="@+id/bCancel"
+			a:text="@string/cancel" a:layout_width="wrap_content"
+			a:layout_weight="1" />
+	</LinearLayout>
+
+	
+</LinearLayout>

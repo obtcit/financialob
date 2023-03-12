@@ -1,0 +1,61 @@
+<!--
+  Copyright (c) 2010 Denis Solonenko.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Denis Solonenko - initial API and implementation
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/no_categories" />
+
+    <LinearLayout style="@style/BottomBar">
+        <ImageButton
+            android:id="@+id/bAdd"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_add_big" />
+
+        <ImageButton
+            android:id="@+id/bAttributes"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_tags" />
+
+        <ImageButton
+            android:id="@+id/bExpandAll"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_expand" />
+
+        <ImageButton
+            android:id="@+id/bCollapseAll"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_collapse" />
+
+        <ImageButton
+            android:id="@+id/bSort"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_sort_2" />
+
+        <ImageButton
+            android:id="@+id/bFix"
+            style="@style/BottomBarButton"
+            android:src="@drawable/actionbar_flash" />
+    </LinearLayout>
+</LinearLayout>

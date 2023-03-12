@@ -1,0 +1,10 @@
+*.iml
+.gradle
+.idea
+/local.properties
+.DS_Store
+/build
+/classes
+/gen
+*.apk
+_prepare_dropbox_keys.sh

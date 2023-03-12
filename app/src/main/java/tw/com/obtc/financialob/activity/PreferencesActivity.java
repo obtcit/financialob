@@ -84,16 +84,16 @@ public class PreferencesActivity extends PreferenceActivity {
             selectDatabaseBackupFolder();
             return true;
         });
-        Preference pAuthDropbox = preferenceScreen.findPreference("dropbox_authorize");
-        pAuthDropbox.setOnPreferenceClickListener(arg0 -> {
-            authDropbox();
-            return true;
-        });
-        Preference pDeauthDropbox = preferenceScreen.findPreference("dropbox_unlink");
-        pDeauthDropbox.setOnPreferenceClickListener(arg0 -> {
-            deAuthDropbox();
-            return true;
-        });
+//        Preference pAuthDropbox = preferenceScreen.findPreference("dropbox_authorize");
+//        pAuthDropbox.setOnPreferenceClickListener(arg0 -> {
+//            authDropbox();
+//            return true;
+//        });
+//        Preference pDeauthDropbox = preferenceScreen.findPreference("dropbox_unlink");
+//        pDeauthDropbox.setOnPreferenceClickListener(arg0 -> {
+//            deAuthDropbox();
+//            return true;
+//        });
         Preference pExchangeProvider = preferenceScreen.findPreference("exchange_rate_provider");
         pOpenExchangeRatesAppId = preferenceScreen.findPreference("openexchangerates_app_id");
         pExchangeProvider.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
@@ -117,7 +117,7 @@ public class PreferencesActivity extends PreferenceActivity {
             useFingerprint.setSummary(getString(R.string.fingerprint_unavailable, reasonWhyFingerprintUnavailable(this)));
             useFingerprint.setEnabled(false);
         }
-        linkToDropbox();
+//        linkToDropbox();
         setCurrentDatabaseBackupFolder();
         enableOpenExchangeApp();
         selectAccount();
@@ -253,7 +253,7 @@ public class PreferencesActivity extends PreferenceActivity {
         super.onResume();
         PinProtection.unlock(this);
         dropbox.completeAuth();
-        linkToDropbox();
+//        linkToDropbox();
     }
 
 }

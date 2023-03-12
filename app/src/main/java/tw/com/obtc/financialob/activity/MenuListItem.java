@@ -120,24 +120,24 @@ public enum MenuListItem implements SummaryEntityEnum {
             GreenRobotBus_.getInstance_(activity).post(new tw.com.obtc.financialob.activity.MenuListActivity.StartDriveRestore());
         }
     },
-    DROPBOX_BACKUP(R.string.backup_database_online_dropbox, R.string.backup_database_online_dropbox_summary, R.drawable.actionbar_dropbox) {
-        @Override
-        public void call(Activity activity) {
-            if (isRequestingPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                return;
-            }
-            GreenRobotBus_.getInstance_(activity).post(new tw.com.obtc.financialob.activity.MenuListActivity.StartDropboxBackup());
-        }
-    },
-    DROPBOX_RESTORE(R.string.restore_database_online_dropbox, R.string.restore_database_online_dropbox_summary, R.drawable.actionbar_dropbox) {
-        @Override
-        public void call(Activity activity) {
-            if (isRequestingPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                return;
-            }
-            GreenRobotBus_.getInstance_(activity).post(new MenuListActivity.StartDropboxRestore());
-        }
-    },
+//    DROPBOX_BACKUP(R.string.backup_database_online_dropbox, R.string.backup_database_online_dropbox_summary, R.drawable.actionbar_dropbox) {
+//        @Override
+//        public void call(Activity activity) {
+//            if (isRequestingPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+//                return;
+//            }
+//            GreenRobotBus_.getInstance_(activity).post(new tw.com.obtc.financialob.activity.MenuListActivity.StartDropboxBackup());
+//        }
+//    },
+//    DROPBOX_RESTORE(R.string.restore_database_online_dropbox, R.string.restore_database_online_dropbox_summary, R.drawable.actionbar_dropbox) {
+//        @Override
+//        public void call(Activity activity) {
+//            if (isRequestingPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+//                return;
+//            }
+//            GreenRobotBus_.getInstance_(activity).post(new MenuListActivity.StartDropboxRestore());
+//        }
+//    },
     MENU_BACKUP_TO(R.string.backup_database_to, R.string.backup_database_to_summary, R.drawable.actionbar_share) {
         @Override
         public void call(final Activity activity) {
